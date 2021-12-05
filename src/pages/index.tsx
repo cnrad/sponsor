@@ -114,7 +114,7 @@ const Home: NextPage = ({ fetchedUserInfo, fetchedFeaturedRepos }: any) => {
                     <h3 className="text-xl text-[#8b949e] font-thin mb-4 text-center md:text-left">Featured Work</h3>
                     <div className="w-full h-auto grid grid-flow-row grid-cols-1 md:grid-cols-2 gap-4 auto-rows-fr">
                         {fetchedFeaturedRepos.map((repo: Record<any, any>) => (
-                            <RepoComponent info={repo} />
+                            <RepoComponent key={repo} info={repo} />
                         ))}
                     </div>
                 </motion.div>
