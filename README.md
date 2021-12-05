@@ -1,5 +1,6 @@
 ## GitHub Sponsors is a hassle to set up for minors, so here's my workaround.
 
+See an example of what it looks like [here](https://sponsor.cnrad.dev).
 
 If you would like to deploy this and accept donations yourself, here's what to do:
 - Fork this repository
