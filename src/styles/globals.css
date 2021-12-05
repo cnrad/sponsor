@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji";
+    width: 100%;
+    height: 100vh;
+    background: #0d1117;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+
+    scrollbar-width: thin;
+    -webkit-scrollbar-width: thin;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+* {
+    box-sizing: border-box;
+}
