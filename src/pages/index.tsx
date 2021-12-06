@@ -19,14 +19,14 @@ const Home: NextPage = () => {
 
     if (isLoading)
         return (
-            <div className="w-[24rem] md:w-[36rem] h-auto flex flex-col items-center justify-center">
+            <div className="w-[20rem] sm:w-[28rem] md:w-[36rem] h-auto flex flex-col items-center justify-center">
                 <h3 className="mt-20 text-2xl text-[#c9d1d9] font-medium mb-10 text-center">Loading....</h3>
             </div>
         );
 
     if (fetchedUserInfo && !error)
         return (
-            <div className="w-[25rem] md:w-[36rem] h-auto flex flex-col items-center justify-center">
+            <div className="w-[20rem] sm:w-[28rem] md:w-[36rem] h-auto flex flex-col items-center justify-center">
                 <h3 className="mt-20 text-2xl text-[#c9d1d9] font-medium mb-10 text-center">
                     Become a Sponsor to{" "}
                     <a className="font-semibold" href={`https://github.com/${fetchedUserInfo.login}`}>
@@ -59,7 +59,7 @@ const Home: NextPage = () => {
                     </div>
                 </motion.div>
 
-                <motion.pre className="mt-6 text-[1rem] leading-[1.5] text-[#c9d1d9] w-full whitespace-pre-wrap font-default">
+                <motion.pre className="mt-6 text-center sm:text-left text-[1rem] leading-[1.5] text-[#c9d1d9] w-full whitespace-pre-wrap font-default">
                     {information.description}
                 </motion.pre>
 
