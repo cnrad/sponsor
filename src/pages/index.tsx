@@ -36,6 +36,8 @@ const Home: NextPage = ({ fetchedUserInfo, fetchedFeaturedRepos }: any) => {
             <Head>
                 <title>Sponsor @{fetchedUserInfo.login} on GitHub</title>
                 <link rel="icon" type="image/png" href="/favicon.png" />
+
+                {/* TODO: add meta tags for embed */}
             </Head>
             <div className="w-[25rem] md:w-[36rem] h-auto flex flex-col items-center justify-center">
                 <h3 className="mt-20 text-2xl text-[#c9d1d9] font-medium mb-10 text-center">

@@ -3,7 +3,7 @@ export const information = {
     username: "cnrad",
 
     // Highlight some of your best works by providing your repository NAMES.
-    featuredRepos: ["lanyard-profile-readme", "d", "iridi", "zroi"],
+    featuredRepos: ["lanyard-profile-readme", "d", "iridi", "h", "sponsor", "hbd-today"],
 
     // Describe yourself, and why you should be sponsored.
     description: `
