@@ -2,9 +2,18 @@ import { languages } from "../util/languages";
 import { motion } from "framer-motion";
 import { Repo } from "../util/types";
 import { OcticonRepo, OcticonStar } from "../icons";
+import useSWR from "swr";
+import { information } from "../info";
 
 export const RepoComponent = (props: any) => {
-    let info: Repo = props.info;
+    const { data: info, error } = useSWR<Repo | null, Record<string, any>>(
+        `https://api.github.com/repos/${information.username}/${props.name}`
+    );
+
+    if (!info || error)
+        return (
+            <div className="border-solid border-[1px] border-[#30363d] rounded-md p-4 w-full h-full">Loading...</div>
+        );
 
     return (
         <motion.div {...props}>
