@@ -46,7 +46,7 @@ export const RepoComponent = (props: any) => {
                     <motion.a
                         href={info.stargazers_url}
                         className="text-[12px] flex flex-row items-center justify-start"
-                        style={{ color: "#8b949e" }}
+                        style={{ color: "#8b949e", textDecoration: "none" }}
                         whileHover={{ color: "#58a6ff", textDecoration: "none" }}
                         transition={{ duration: 0 }}
                     >
